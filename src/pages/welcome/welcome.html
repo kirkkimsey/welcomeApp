@@ -1,0 +1,28 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>welcome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label text-center floating>First Name</ion-label>
+    <ion-input type="text" [(ngModel)]="firstName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label text-center floating>Last Name</ion-label>
+    <ion-input type="text" [(ngModel)]="lastName"></ion-input>
+  </ion-item>
+  <button ion-button block clear (click)="logForm()">Log Name</button>
+
+</ion-content>
